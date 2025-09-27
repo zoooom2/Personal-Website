@@ -5,7 +5,7 @@ export default function Profile() {
   return (
     <section
       id="profile"
-      className="flex flex-col xl:flex-row justify-center items-center gap-10 lg:h-[80vh] sm:px-[10rem] h-screen"
+      className="flex flex-col xl:flex-row justify-center items-center gap-10 lg:h-[80vh] sm:px-[10rem] sm:h-screen max-sm:h-[90vh]"
     >
       <div className="flex aspect-square w-[300px] sm:w-[400px] mx-auto max-xl:justify-center">
         <img src="/linkedIn Profile.jpg" alt="profile" className="object-cover rounded-full aspect-square " /> 
