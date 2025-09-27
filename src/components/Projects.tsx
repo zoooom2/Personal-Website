@@ -53,16 +53,16 @@ export default function Projects() {
         {projects.map((project) => (
           <div
             key={project.title}
-            className="border border-gray-300 rounded-2xl p-6 bg-white shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col justify-between"
+            className="border border-gray-300 rounded-2xl p-6 bg-white shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col justify-between gap-3"
           >
-            <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
-            <p className="text-gray-700 mb-4 text-[14px]">{project.description}</p>
+            <h3 className="text-[18px] sm:text-2xl font-semibold">{project.title}</h3>
+            <p className="text-gray-700 text-[12px] sm:text-[14px]">{project.description}</p>
             {project.link && (
               <a
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block text-black hover:underline font-medium"
+                className="inline-block text-black hover:underline font-medium max-sm:text-[14px]"
               >
                 Visit Project →
               </a>
