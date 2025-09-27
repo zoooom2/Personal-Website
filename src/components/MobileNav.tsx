@@ -28,7 +28,7 @@ export default function MobileNavbar() {
             <li key={item} className="flex flex-col">
               <a
                 href={`#${item.toLowerCase()}`}
-                className="px-6 py-3 text-xl text-black hover:bg-gray-100"
+                className="px-6 py-3 text-[12px] sm:text-xl text-black hover:bg-gray-100"
                 onClick={() => setMenuOpen(false)}
               >
                 {item}
