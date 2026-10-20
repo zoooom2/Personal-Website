@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Roqeeb Adeyinka – CV</title>
+<style>
+@page{size:A4;margin:16mm 16mm}
+*{box-sizing:border-box}
+body{font:10.2pt/1.45 -apple-system,"Helvetica Neue",Arial,sans-serif;color:#111;margin:0}
+h1{font-size:23pt;margin:0 0 2pt;font-weight:600}
+h2{font-size:11.5pt;text-transform:uppercase;letter-spacing:.06em;border-bottom:1px solid #bbb;padding-bottom:2pt;margin:14pt 0 6pt}
+h3{font-size:11pt;margin:9pt 0 0}
+.sub{font-weight:600;margin:0 0 3pt}
+.meta{color:#444;margin:0}
+.when{font-style:italic;color:#444;margin:0 0 3pt}
+ul{margin:3pt 0;padding-left:15pt}
+li{margin-bottom:2pt}
+p{margin:0 0 4pt}
+a{color:#111;text-decoration:none}
+section,li{break-inside:avoid}
+</style></head><body>
+<h1>Roqeeb Adeyinka</h1>
+<p class="sub">Frontend Engineer, 4+ years — TypeScript · React · Next.js · Testing · Production Fintech</p>
+<p class="meta">Lagos, Nigeria · adeyinkaroqeeb@gmail.com · +234 906 067 8621 · linkedin.com/in/roqeeb-adeyinka · github.com/zoooom2</p>
+
+<h2>Profile</h2>
+<p>Frontend engineer with 4+ years shipping production software, currently at Moniepoint, one of Africa's largest fintechs, and previously lead engineer of a full e-commerce platform taken from code to live payments. I build screens and user journeys in TypeScript, React and Next.js to agreed designs, on shared component systems, wired to real APIs and backed by unit, component and end-to-end tests. I've led framework migrations (MERN to Next.js, React 19, Tailwind 4, Jest to Vitest), so I pick up new stacks fast. I already work across the stack, from Node.js APIs and payment integrations to CI/CD, security and production debugging, and I bring that experience in regulated financial products to every team I join.</p>
+<ul>
+<li>Shipped business-critical accounting features used by Moniepoint's business customers, and made their large data tables responsive under heavy use.</li>
+<li>Led a 49k-line TypeScript e-commerce platform end to end: storefront, admin, Paystack and Stripe payments, security, CI/CD and AWS deployment.</li>
+<li>Kept quality high with 250+ test files, Cypress end-to-end tests, CI on every pull request, and a 10% rise in coverage at Moniepoint.</li>
+</ul>
+
+<h2>Technical Skills</h2>
+<ul>
+<li><b>Frontend:</b> TypeScript, JavaScript, HTML5, CSS3, React 19, Next.js (App Router), Tailwind CSS, shadcn/ui, responsive layouts, forms and validation (Valibot), state management (Redux Toolkit)</li>
+<li><b>Components and design systems:</b> reusable component libraries, shared design systems, microfrontends</li>
+<li><b>APIs:</b> REST, HTTP, JSON, GraphQL (Apollo), Backend-for-Frontend with Node.js and Express</li>
+<li><b>Testing:</b> Vitest, Jest, React Testing Library, Cypress (end-to-end)</li>
+<li><b>Debugging:</b> browser dev tools, React DevTools, source maps, New Relic, OpenTelemetry</li>
+<li><b>Secure frontend:</b> httpOnly cookie auth, CSRF and Content Security Policy protection, input validation, role-based access</li>
+<li><b>Workflow:</b> Git, pull requests and code review, GitHub Actions CI/CD, Docker, Biome, ESLint</li>
+<li><b>AI-assisted development:</b> Claude Code for implementation, refactoring and audits, with tests, typecheck and code review as guardrails</li>
+</ul>
+
+<h2>Experience</h2>
+<h3>Frontend Engineer — Moniepoint</h3>
+<p class="when">December 2025 – Present · Fintech (payments, banking and business finance)</p>
+<ul>
+<li>Build and maintain screens and user journeys for business accounting features, including transactions, bills, savings, categories, profit-and-loss reports and chart of accounts.</li>
+<li>Integrate REST APIs into data-heavy financial tables and forms, handling loading, empty and error states so users can rely on what they see.</li>
+<li>Optimised table rendering by cutting unnecessary cell re-renders, batching updates with requestAnimationFrame and restructuring layouts with CSS Grid, so large tables stay responsive while scrolling and editing.</li>
+<li>Migrated tests from Jest to Vitest and raised test coverage by 10%; moved linting from ESLint to Biome.</li>
+<li>Helped upgrade the platform to React 19 and Tailwind CSS 4, fixing compatibility issues across shared components in a microfrontend setup.</li>
+<li>Added source maps across microfrontends so production errors trace back to the original code, speeding up investigations.</li>
+<li>Contributed to an Express.js Backend-for-Frontend with CSRF and Content Security Policy protection, keeping sensitive handling off the client.</li>
+<li>Investigate and fix production issues in feature flags, application loading and shared styling, and take part in code reviews.</li>
+</ul>
+
+<h3>Lead Full-Stack Developer — BAZ Studio</h3>
+<p class="when">2022 – September 2025 · E-commerce</p>
+<p>Lead engineer on a production platform selling in Nigeria and internationally: Next.js, React 19 and strict TypeScript, about 49k lines across 700+ source files.</p>
+<ul>
+<li>Led development of an e-commerce platform with a customer storefront and an admin back-office, from screens and APIs to deployment.</li>
+<li>Migrated the original MERN application to Next.js, and fixed layout shift (CLS) on the home page while adding SEO metadata.</li>
+<li>Built admin screens for products, inventory and orders with server-side search, pagination and URL-based filters, so every view can be shared and reloaded safely.</li>
+<li>Built a reusable component system with Tailwind and shadcn/ui, including dark mode, keeping logic in hooks so components stay simple and testable.</li>
+<li>Implemented checkout with Paystack and Stripe, with Valibot validation on every request plus recovery for missed payment webhooks and daily reconciliation.</li>
+<li>Designed the backend for reliability: an event-driven order pipeline with Kafka workers and retry handling, Redis caching, and feature flags that switch off risky features instantly.</li>
+<li>Added OpenTelemetry tracing and New Relic alerting so issues surface before customers report them.</li>
+<li>Secured the back-office with httpOnly cookie auth, two-factor sign-in, role-based access and audit logging.</li>
+<li>Maintained 250+ Vitest and Testing Library test files plus Cypress end-to-end tests, run in CI on every pull request before merge.</li>
+<li>Supported releases through an automated pipeline with Docker image scanning, deployment to AWS and post-deploy smoke tests, and wrote runbooks and architecture docs.</li>
+</ul>
+
+<h2>Education</h2>
+<p><b>BSc Electrical and Electronics Engineering</b> — University of Ilorin, Nigeria · Second Class Upper Division</p>
+</body></html>

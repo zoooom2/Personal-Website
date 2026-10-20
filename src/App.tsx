@@ -1,26 +1,25 @@
-
 import Navbar from "./components/Navbar";
-import MobileNavbar from "./components/MobileNav";
-import Profile from "./components/Profile";
-import About from "./components/About";
+import Hero from "./components/Hero";
+import Strengths from "./components/Strengths";
+import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Skills from "./components/Skills";
-
 
 export default function App() {
-  
-
-  return (    <div className="font-poppins text-gray-800 scroll-smooth flex flex-col gap-10">
+  return (
+    <>
       <Navbar />
-      <MobileNavbar />
-      <Profile />
-      <About />
-      <Projects />
-      <Skills/>
-      <Contact />
+      <main>
+        <Hero />
+        <Strengths />
+        <Experience />
+        <Projects />
+        <Skills />
+        <Contact />
+      </main>
       <Footer />
-    </div>
-);
+    </>
+  );
 }

@@ -1,75 +1,23 @@
-interface Project {
-  title: string;
-  description: string;
-  tech?: string[];
-  link?: string;
-}
-
-const projects: Project[] = [
-  {
-    title: "Flexire Consulting",
-    description:
-      "Lead software development efforts for dashboards and client-facing web applications. Built the company’s landing page and designed dynamic dashboards using analyst-provided data.",
-    link: "https://flexireconsulting.biz",
-  },
-  {
-    title: "BAZ Studio E-commerce",
-    description:
-      "Designed, built, and maintained a TypeScript MERN e-commerce platform with admin dashboard to manage orders, monitor visitor statistics, upload/edit products, and generate analytics. Migrated project to Next.js for improved performance & SEO.",
-    link: "https://bazofficial.xyz",
-  },
-  {
-    title: "Cruise Central Ticketing Platform",
-    description:
-      "Developed a Next.js ticketing platform for online event ticket sales. Integrated secure payment solutions and optimized for high-traffic events.",
-    link: "https://cruisecentral.xyz",
-  },
-  {
-    title: "WovenKulture Website",
-    description:
-      "Improved a Wix-built website under a 3-day deadline, enhancing design consistency and user experience while delivering ahead of schedule.",
-    link: "https://wovenkulture.online",
-  },
-  {
-    title: "Traditional Retail Brand",
-    description:
-      "Built a full-featured e-commerce platform with admin dashboard, user-side blog section, and blog management dashboard.",
-    link: "https://okanran-ajangbile.com",
-  },
-  {
-    title: "Jam Foundation Blog",
-    description:
-      "Built and deployed a fully responsive blog website with custom admin dashboard, enabling non-technical staff to easily manage posts and announcements.",
-    link: "https://jamfoundation.org.ng",
-  },
-];
+import { projects } from "../data";
+import Section from "./Section";
 
 export default function Projects() {
   return (
-    <section id="projects" className="px-[10rem] max-xl:px-[5%] gap-10 flex flex-col">
-      <h2 className="text-center text-[36px] sm:text-5xl">Projects</h2>
-
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projects.map((project) => (
-          <div
-            key={project.title}
-            className="border border-gray-300 rounded-2xl p-6 bg-white shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col justify-between gap-3"
+    <Section id="projects" title="Projects" intro="Products I've built or led." tint>
+      <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        {projects.map((p) => (
+          <article
+            key={p.title}
+            className={`rounded-2xl border bg-white p-6 ${
+              p.featured ? "border-brand md:col-span-2 lg:col-span-1" : "border-line"
+            }`}
           >
-            <h3 className="text-[18px] sm:text-2xl font-semibold">{project.title}</h3>
-            <p className="text-gray-700 text-[12px] sm:text-[14px]">{project.description}</p>
-            {project.link && (
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block text-black hover:underline font-medium max-sm:text-[14px]"
-              >
-                Visit Project →
-              </a>
-            )}
-          </div>
+            {p.featured && <span className="mb-2 inline-block text-xs font-semibold uppercase tracking-wide text-brand">Featured</span>}
+            <h3 className="text-lg font-semibold">{p.title}</h3>
+            <p className="mt-2 text-sm text-muted">{p.description}</p>
+          </article>
         ))}
       </div>
-    </section>
+    </Section>
   );
 }
